@@ -1,0 +1,28 @@
+
+.HoverRotatorRow{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	/*background-color: red;*/
+}
+
+.HoverRotatorContainer{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	/*background-color: #2222;*/
+	justify-content: space-around;
+	margin-left: 50vw;
+}
+
+.HoverRotator{
+	background-color: #333333;
+	width: 1.5rem;
+	height: 0.5rem;
+	/*position: absolute;*/
+	border-radius: 0.5rem;
+	transform-origin: top left;
+	/*transition-timing-function: cubic-bezier(0.0, 1.0, 1.0, 1.0);*/
+	/*transition-duration: 2000ms;*/
+	/*transition-delay: 0ms;*/
+}
