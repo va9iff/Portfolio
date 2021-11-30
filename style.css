@@ -17,13 +17,22 @@ html {
 #main {
 	width: 100%;
 	height: 100vh;
+	background: linear-gradient(20deg, red, blue);
+	/*position: fixed;*/
 }
 
 #wrapper {
+	/*overflow: hidden;*/
+	left: 0;
+	top: 0;
 	background: #eee;
 	padding: 0.4rem;
 	position: absolute;
 	width: 100%;
+	height: 100vh;
+	transition-duration: 600ms;
+
+	/*overflow-y: scroll;*/
 }
 
 #headerBorder{
@@ -59,7 +68,7 @@ html {
 	align-items: center;
 	justify-content: center;
 	flex: 1;
-	padding-right: 2rem;
+	/*padding-right: 2rem;*/
 	border: 2px solid #fff;
 }
 
@@ -306,16 +315,41 @@ html {
 	/*padding-top: 8rem;*/
 }
 
-#main{
-	background: linear-gradient(20deg, red, blue);
-}
 
 .wrapperZoomedOut{
-	width: 20vw !important;
+/*	transition-duration: 600ms !important;
+	width:10vw !important;
+	left: 1rem !important;
+	top: 1rem !important;
+	height: 80vh !important;
+	border-radius: 2rem;
+*/
+	transform: scale(0.7);
+	border-radius: 1rem;
+	background-color: #222 !important;
+	/*height: 80vh !important;*/
+	/*height: 80vh !important;*/
+	/*width: 10vw !important;*/
+	width: 10rem !important;
 }
 
-html{
-	padding-bottom: 180vh;
-	border-radius: 0.4rem;
-
+#content{
+	opacity: 1;
+	transition-duration: 180ms;
 }
+
+.zoomOutFade{
+	transform: translateX(-50%) !important;
+	opacity: 0 !important;
+	/*background-color: red;*/
+}
+
+.displayNoneInator{
+	display: none !important;
+}
+
+/*html{*/
+	/*padding-bottom: 180vh;*/
+	/*border-radius: 0.4rem;*/
+
+/*}*/
