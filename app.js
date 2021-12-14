@@ -10,6 +10,34 @@ var headerBorder = g("#headerBorder")
 var wrapper = g("#wrapper")
 var stickyOffset = window.innerHeight * 0.05
 
+var hedaerHider = g('#headerHider')
+var headerIsHidden = false
+
+hideHeader=function(e){
+	header.style.transform = "translateY(-70%)"
+	headerIsHidden = true
+	e.stopPropagation()
+	header.onclick = unhideHedaer
+	hedaerHider.onclick = unhideHedaer
+	hedaerHider.innerHTML = "v"
+
+}
+
+unhideHedaer = ()=>{
+	header.style.transform = ""
+	header.onclick = ()=>{}
+	hedaerHider.onclick = hideHeader
+	hedaerHider.innerHTML = "^"
+
+}
+
+header.onclick = unhideHedaer
+
+
+
+hedaerHider.onclick = hideHeader
+
+
 /*Sticky header***************************************/
 
 function checkScroll() {
@@ -29,6 +57,7 @@ window.onscroll = checkScroll
 
 /*Zoom out menu***************************************/
 
+var galleryBg = g('#galleryBg')
 var content = g("#content")
 
 zoomTogglers = [
@@ -47,8 +76,13 @@ zoomTogglers = [
 function zoomOut() {
 	wrapper.classList.add("wrapperZoomedOut")
 	content.classList.add("zoomOutFade")
+
+	galleryBg.classList.remove("bgZoomedIn")
+
 	zoomTogglers.forEach(toggler => (toggler.classList.add("displayNoneInator")))
   projectsButtonText.innerHTML = "back"
+
+  unhideHedaer()
 	// headerBorder.classList.add("headerBorderScrolled")
 
 projectsButton.onclick = zoomIn
@@ -57,6 +91,9 @@ projectsButton.onclick = zoomIn
 
 function zoomIn() {
   projectsButtonText.innerHTML = "Projects"
+
+	galleryBg.classList.add("bgZoomedIn")
+
 
   wrapper.classList.remove("wrapperZoomedOut")
   content.classList.remove("zoomOutFade")
