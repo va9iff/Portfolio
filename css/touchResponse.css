@@ -1,0 +1,36 @@
+#touchResponse {
+  position: fixed;
+  width: 0;
+  height: 0;
+  background-color: #5843;
+  pointer-events: none;
+  z-index: 999;
+  left: 0;
+  top: 0;
+}
+
+.touchBlob {
+  /*background-color: red;*/
+  background: radial-gradient(#0000, #fff);
+  backdrop-filter: inverte(100);
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation-name: touchResponseAnim;
+  animation-duration: 800ms;
+  border-radius: 50%;
+}
+
+@keyframes touchResponseAnim {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+
+/*# sourceMappingURL=touchResponse.css.map */

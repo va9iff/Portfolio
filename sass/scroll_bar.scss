@@ -1,0 +1,65 @@
+/* content oriented */
+::-webkit-scrollbar {
+	width: 16px;
+	height: 16px;
+	/*height: 20px;*/
+}
+
+/*::-webkit-scrollbar-button {*/
+/*width: 12px;*/
+/*height: 12px;*/
+/*}*/
+::-webkit-scrollbar-thumb {
+	//background: linear-gradient(20deg, #66f, #f66);
+	background: linear-gradient(
+		20deg,
+		hsl(280deg, 100%, 50%),
+		hsl(150deg, 100%, 50%)
+	);
+	border: 3px solid #555;
+	border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    20deg,
+    hsl(280deg, 100%, 50%),
+    hsl(150deg, 100%, 50%)
+  );
+  box-shadow: 0 0 0 0 #fff inset, 0 0 10px 0 #222, 0 0 10px 0 #fff inset;
+  border: none
+}
+
+::-webkit-scrollbar-thumb:active {
+	//background: linear-gradient(20deg, #22f, #f22);
+	background: linear-gradient(
+		20deg,
+    hsl(280deg, 100%, 50%),
+    hsl(150deg, 100%, 50%)
+	);
+
+	border: none;
+	box-shadow: 0 0 0 1px #fff inset, 
+  //0 15px 25px 0 hsl(280deg, 100%, 50%),
+  //0 -15px 25px 0 hsl(150deg, 100%, 50%);
+}
+
+::-webkit-scrollbar-track {
+	background: #555;
+	border: 0px none #ffffff;
+	border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+	//background: #222;
+  //border-radius: 0;
+
+}
+
+::-webkit-scrollbar-track:active {
+	background: #222;
+}
+
+::-webkit-scrollbar-corner {
+	background: transparent;
+}

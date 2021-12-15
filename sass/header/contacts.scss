@@ -1,0 +1,142 @@
+#crucialContacts {
+	flex-wrap: wrap;
+
+	/*background-color: #323;*/
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+
+#crucialContacts > * {
+	/*background-color: #334;*/
+	text-align: center;
+	justify-content: center;
+}
+
+
+#tel {
+	display: flex;
+	flex-direction: row;
+}
+
+#tels:hover {
+	/*transform: scale(1.2);*/
+}
+#tels {
+	display: flex;
+	flex-direction: row;
+	width: 8rem;
+	height: 1.5rem;
+}
+
+
+#phone,
+#telegram,
+#whatsapp {
+	flex: 1;
+	background-color: var(--colr);
+	transition-duration: 250ms;
+}
+
+#phone > img {
+	filter: invert(1);
+}
+
+#phone {
+	--colr: #7d7;
+	border-radius: 1rem 0 0 1rem;
+}
+
+#telegram {
+	--colr: #64a9dc;
+}
+
+#whatsapp > img {
+	filter: grayscale(100%) brightness(3);
+}
+#whatsapp {
+	--colr: #0dc143;
+	border-radius: 0 1rem 1rem 0;
+}
+
+#phone:hover,
+#telegram:hover,
+#whatsapp:hover {
+	flex: 2;
+	filter: drop-shadow(0 0 70px var(--colr));
+}
+
+#tels > a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#tels > a > img {
+	height: 1rem;
+}
+
+#gmail,
+#location,
+#instagram,
+#patreon {
+	display: flex;
+	align-items: center;
+}
+
+#instagram,
+#patreon {
+	background-color: #333;
+	padding: 0.1rem 1.2rem;
+	margin: 0.3rem;
+	/*justify: center;*/
+	border-radius: 0.3rem;
+	color: #eee;
+	text-decoration: none;
+}
+
+#instagram {
+	background-color: #0000;
+	padding: 0.1rem 0.1rem;
+}
+
+#location > img {
+	height: 1rem;
+	margin-right: 0.8rem;
+	transform: translateY(2px);
+	/*background-color: #f3f	;*/
+}
+
+#gmail > img {
+	height: 1rem;
+}
+
+#instagram > img,
+#patreon > img {
+	height: 1rem;
+	margin-right: 0.2rem;
+}
+
+#patreon > img {
+	border-radius: 50%;
+	/*height: 2rem;*/
+	margin-right: 0.5rem;
+	transform: translateX(-30%) scale(2);
+	/*margin-right: 0.8rem;*/
+}
+
+#patreon:hover > img {
+	transform: translateX(-43%) scale(2);
+}
+#patreon:hover {
+	background-color: #444;
+	transition-duration: 0ms;
+}
+
+#additionalInfo {
+	display: inline;
+	margin: 1rem;
+}
+

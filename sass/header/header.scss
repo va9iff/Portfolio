@@ -1,0 +1,156 @@
+
+#headerBorder {
+	flex-wrap: wrap;
+
+	flex-direction: row;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+	padding: 0.4rem;
+	border-radius: 1.3rem;
+}
+#realHeader:hover {
+	transition-duration: 500ms;
+	box-shadow: 0 8px 28px #0005;
+}
+#realHeader {
+	background-color: #222;
+	color: #eee;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.4rem;
+	border-radius: 1.3rem;
+}
+
+#headerBorder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1;
+	/*padding-right: 2rem;*/
+	border: 2px solid #fff;
+}
+
+#realHeader > * {
+	margin: 0.4rem;
+}
+
+
+#header {
+	position: relative;
+	z-index: 660;
+}
+
+.headerScrolled {
+	padding: 0 !important;
+	margin: 0 !important;
+	border-radius: 0 !important;
+	position: fixed !important;
+	left: 0 !important;
+	top: 0 !important;
+	width: 100% !important;
+	flex-wrap: wrap;
+}
+
+.headerScrolled > #headerBorder {
+	border: none !important;
+	/*padding: 0 !important;*/
+	margin: 0 !important;
+	width: 100%;
+	flex-wrap: wrap;
+	border-radius: 0 !important;
+	box-shadow: 0 8px 18px #0004;
+}
+
+.headerScrolled > #headerBorder > #headerHider {
+	background-color: #333 !important;
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
+	flex-grow: 1;
+
+}
+
+.headerScrolled > #headerBorder > #additionalInfo {
+	position: relative;
+	/*transform: scaleX(0);*/
+	/*width: 0;*/
+	/*text-overflow: ellipsis;*/
+	display: none;
+
+	background-color: red;
+}
+
+.headerScrolled > #headerBorder > #secondaryContacts {
+	display: flex;
+	flex-direction: row;
+}
+.headerScrolled > #headerBorder > #crucialContacts {
+	flex-direction: row;
+}
+
+.headerScrolled > #headerBorder > #myImage {
+	height: 2.5rem;
+	width: 2.5rem;
+	margin: 0;
+	margin-left: 1.5rem;
+	/*display: inline;*/
+}
+
+.headerScrolled > #headerBorder > #crucialContacts > * {
+	margin-left: 1rem;
+	flex-grow: 1;
+}
+
+.headerScrolled > #headerBorder > #buttonWrapper {
+	padding: 0.6rem 0.5rem;
+	border-radius: 0.4rem;
+}
+
+#headerHider {
+	margin: 1.2rem;
+	padding: 0.5rem;
+	background-color: #0000;
+	border: none;
+	color: #eee;
+	display: none;
+}
+
+#myImage {
+	transition-duration: 400ms;
+	margin: 1rem;
+	margin-left: 3.5rem;
+	/*margin-right: 1rem ;*/
+	width: 6rem;
+	height: 6rem;
+	border-radius: 50%;
+	box-shadow: 10px -18px 40px #000c, -1px 1px 4px #fff;
+}
+
+
+
+#myImage:hover {
+	box-shadow: 0 0 40px #000, 0 0 12px -6px #fff;
+	transform: scale(1.02);
+}
+
+
+
+#buttonWrapper {
+	margin-top: 0.1rem;
+	margin-left: 0.1rem;
+	border: 0.2rem solid #fff;
+	padding: 1.9rem 1.2rem;
+	border-radius: 1.3rem;
+	transition-duration: 350ms;
+	cursor: pointer;
+}
+
+
+#buttonWrapper:hover {
+	background-color: #fff;
+	color: #000;
+}
+

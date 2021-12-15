@@ -108,3 +108,30 @@ var projectsButtonText = g("#projectsOrBackButton")
 var wrapper = g("#wrapper")
 // log(projectsButton)
 projectsButton.onclick = zoomOut
+
+
+// touch response
+////////////////////////////////////////////////////
+
+var touchResponse = g('#touchResponse')
+// var touchBlob = g('.touchBlob')
+
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+document.onclick = (e)=>
+{
+	let t = [e.clientX, e.clientY]
+	let touchBlob = document.createElement('div')
+	touchBlob.className='touchBlob'
+
+	console.log(touchBlob)
+	// touchBlob.offsetLeft
+	touchBlob.style.left = t[0] + 'px'
+	touchBlob.style.top = t[1] + 'px'
+	touchResponse.appendChild(touchBlob)
+	// setTimeout(()=>touchBlob.style.transform = 'scale(3)')
+	setTimeout(()=>touchBlob.remove(), 800)
+	console.log(t)
+}
+//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

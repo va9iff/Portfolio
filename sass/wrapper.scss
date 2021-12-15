@@ -1,0 +1,64 @@
+#wrapper {
+	z-index: 101;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	background: #eee;
+	padding: 0.4rem;
+	position: absolute;
+	width: 100%;
+	min-height: 100vh;
+	transition-duration: 600ms;
+
+	/*overflow-y: scroll;*/
+}
+
+.wrapperScrolled {
+	/*padding-top: 1.4rem !important;*/
+}
+
+.wrapperScrolled > #content {
+	/*background-color: ;*/
+}
+
+#content {
+	/*padding-top: 8rem;*/
+}
+
+.wrapperZoomedOut:hover {
+	background-color: #333 !important;
+	box-shadow: -3rem 0 70px #0007;
+	transform: scale(0.75) translate(1rem, 0.7rem);
+	border-radius: 1.7rem;
+	height: 100vh !important;
+	/*transition-timing-function: ease-in-out;*/
+}
+
+.wrapperZoomedOut {
+	/*	transition-duration: 600ms !important;
+	width:10vw !important;
+	left: 1rem !important;
+	top: 1rem !important;
+	height: 80vh !important;
+	border-radius: 2rem;
+*/
+	transform: scale(0.7);
+	border-radius: 1rem;
+	background-color: #222 !important;
+	/*height: 80vh !important;*/
+	/*height: 80vh !important;*/
+	/*width: 10vw !important;*/
+	width: 10rem !important;
+}
+
+#content {
+	opacity: 1;
+	transition-duration: 180ms;
+}
+
+.zoomOutFade {
+	/*transform: translateX(-50%) !important;*/
+	/*opacity: 0 !important;*/
+	/*background-color: red;*/
+	display: none !important;
+}
