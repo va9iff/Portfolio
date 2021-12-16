@@ -131,7 +131,13 @@ document.onclick = (e)=>
 	touchBlob.style.top = t[1] + 'px'
 	touchResponse.appendChild(touchBlob)
 	// setTimeout(()=>touchBlob.style.transform = 'scale(3)')
+	setTimeout(()=>{
+		touchBlob.style.opacity = 0
+		touchBlob.style.transform = 'scale(3) translate(-50%, -50%)'
+	})
 	setTimeout(()=>touchBlob.remove(), 800)
 	console.log(t)
 }
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+projectsButton.click()

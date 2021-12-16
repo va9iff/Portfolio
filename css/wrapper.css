@@ -26,8 +26,8 @@
 
 .wrapperZoomedOut:hover {
   background-color: #333 !important;
-  box-shadow: -3rem 0 70px #0007;
-  transform: scale(0.75) translate(1rem, 0.7rem);
+  box-shadow: -3rem 0 70px #2227;
+  transform: scale(0.72) translate(0.5rem, 0.34rem);
   border-radius: 1.7rem;
   height: 100vh !important;
   /*transition-timing-function: ease-in-out;*/

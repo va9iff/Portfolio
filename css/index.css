@@ -199,8 +199,8 @@ html {
 
 .wrapperZoomedOut:hover {
   background-color: #333 !important;
-  box-shadow: -3rem 0 70px #0007;
-  transform: scale(0.75) translate(1rem, 0.7rem);
+  box-shadow: -3rem 0 70px #2227;
+  transform: scale(0.72) translate(0.5rem, 0.34rem);
   border-radius: 1.7rem;
   height: 100vh !important;
   /*transition-timing-function: ease-in-out;*/
@@ -405,45 +405,6 @@ html {
   #headerHider {
     display: inline;
   }
-
-  .project:hover {
-    transform: scale(1) translate(-7.5vw, -1.4rem);
-    top: 5%;
-    width: 50vw;
-    height: 90%;
-  }
-
-  .project {
-    transition-duration: 600ms;
-    transform: scale(0.97);
-    /*background-color: #7f7;*/
-    position: absolute;
-    /*margin: 1rem;*/
-    /*width: 750px;*/
-    width: 80vw !important;
-    top: 10%;
-    height: 80%;
-    border-radius: 3rem;
-    background: linear-gradient(-30deg, #0000, #ffff);
-    box-shadow: -30px 30px 30px #3333;
-    /*border: 1.2px solid #eee3;*/
-  }
-
-  #p1 {
-    left: 85vw !important;
-  }
-
-  #p2 {
-    left: 170vw !important;
-  }
-
-  #p3 {
-    left: 250vw !important;
-  }
-
-  #p4 {
-    left: 330vw !important;
-  }
 }
 @media only screen and (min-width: 1000px) {
   #headerBorder {
@@ -456,6 +417,7 @@ html {
 /*}*/
 /* projects slider */
 #projects {
+  border-left: solid 2px red;
   /*background-color: #efefef4e;*/
   /*z-index: ;*/
   /*overflow-x: scroll;*/
@@ -468,6 +430,7 @@ html {
   position: absolute;
   width: 100vh;
   height: 100vw;
+  /*padding-top: 10rem;*/
   /*display: flex;*/
   transform-origin: top left;
   /*background-color: salmon;*/
@@ -521,29 +484,48 @@ iframe {
 }
 
 .project:hover {
-  transform: scale(1) translate(-7.5vw, -1.4rem);
-  top: 5%;
-  width: 50vw;
-  height: 90%;
-  box-shadow: -40px 50px 30px #3337;
-  background-color: #fffd;
-  z-index: 21;
+  /*transform: */
+  /*rotate(90deg) */
+  /*translate(100%, -1.5%) */
+  /*scale(1.02);*/
+  transform: rotate(90deg) translateX(97.5%) translateY(-107%) scale(1.05);
+  /*box-shadow: -30px 30px 30px #3333,*/
+  /*-30px 40px 40px #3334;*/
 }
 
 .project {
-  z-index: 20;
-  transition-duration: 600ms;
-  transform: scale(0.97);
-  /*background-color: #7f7;*/
-  /*margin: 1rem;*/
-  /*width: 750px;*/
-  width: 35vw !important;
-  top: 10%;
-  height: 80%;
-  border-radius: 3rem;
-  background: linear-gradient(-30deg, #0000, #eee6);
+  padding: 4rem;
+  margin-left: 5vh;
+  height: 80vh;
+  width: 50vw;
+  /*left: 10vw;*/
+  border-left: solid red 2px;
+  /*height: 80vh;*/
+  /*height: 4rem;*/
+  background: linear-gradient(60deg, #0000, #eee6);
   box-shadow: -30px 30px 30px #3333;
-  /*border: 1.2px solid #eee3;*/
+  border-radius: 3rem;
+  transition-duration: 600ms;
+  z-index: 20;
+  transform-origin: top left;
+  transform: rotate(90deg) translateX(100%) translateY(-100%);
+  position: absolute;
+}
+
+#p1 {
+  top: 30vw;
+}
+
+#p2 {
+  top: 90vw;
+}
+
+#p3 {
+  top: 150vw;
+}
+
+#p4 {
+  top: 210vw;
 }
 
 /* content oriented */
@@ -606,21 +588,10 @@ iframe {
   width: 1.5rem;
   height: 1.5rem;
   position: absolute;
+  transform-origin: top left;
   transform: translate(-50%, -50%);
-  animation-name: touchResponseAnim;
-  animation-duration: 800ms;
   border-radius: 50%;
-}
-
-@keyframes touchResponseAnim {
-  from {
-    transform: scale(1);
-    opacity: 1;
-  }
-  to {
-    transform: scale(3);
-    opacity: 0;
-  }
+  transition-duration: 780ms;
 }
 
 /*# sourceMappingURL=index.css.map */
