@@ -14,16 +14,21 @@ var hedaerHider = g('#headerHider')
 var headerIsHidden = false
 
 hideHeader=function(e){
-	header.style.transform = "translateY(-70%)"
+	// header.style.transform = "translateY(-70%)"//old
+	header.classList.add('hiddenHeader')   //new
 	headerIsHidden = true
-	e.stopPropagation()
-	header.onclick = unhideHedaer
-	hedaerHider.onclick = unhideHedaer
+	// e.stopPropagation()
+	header.onclick = ()=>{}
+	setTimeout(()=>{
+	header.onclick = unhideHeader
+	})
+	hedaerHider.onclick = unhideHeader
 	hedaerHider.innerHTML = "v"
 
 }
 
-unhideHedaer = ()=>{
+unhideHeader = ()=>{
+	header.classList.remove('hiddenHeader')   //new
 	header.style.transform = ""
 	header.onclick = ()=>{}
 	hedaerHider.onclick = hideHeader
@@ -31,7 +36,7 @@ unhideHedaer = ()=>{
 
 }
 
-header.onclick = unhideHedaer
+header.onclick = unhideHeader
 
 
 
@@ -40,15 +45,23 @@ hedaerHider.onclick = hideHeader
 
 /*Sticky header***************************************/
 
-function checkScroll() {
-	if (contentIsOpened) {
-		if (window.pageYOffset > stickyOffset) {
+function maximizeHeader(){
+			header.classList.remove("headerScrolled")
+			wrapper.classList.remove("wrapperScrolled")
+			unhideHeader()
+}
+function minimizeHeader(){
 			header.classList.add("headerScrolled")
 			headerBorder.classList.add("headerBorderScrolled")
 			wrapper.classList.add("wrapperScrolled")
+}
+
+function checkScroll() {
+	if (contentIsOpened) {
+		if (window.pageYOffset > stickyOffset) {
+			minimizeHeader()
 		} else {
-			header.classList.remove("headerScrolled")
-			wrapper.classList.remove("wrapperScrolled")
+			maximizeHeader()
 		}
 	}
 }
@@ -73,7 +86,9 @@ zoomTogglers = [
 	g("#additionalInfo"),
 ]
 
-function zoomOut() {
+function zoomOut(e) {
+	contentIsOpened = false
+
 	wrapper.classList.add("wrapperZoomedOut")
 	content.classList.add("zoomOutFade")
 
@@ -82,7 +97,16 @@ function zoomOut() {
 	zoomTogglers.forEach(toggler => (toggler.classList.add("displayNoneInator")))
   projectsButtonText.innerHTML = "back"
 
-  unhideHedaer()
+  setTimeout(()=>maximizeHeader())
+
+
+
+  unhideHeader()
+  // e.stopPropagation()
+
+  // minimizeHeader()
+
+  // setTimeout(unhideHeader, 2000)
 	// headerBorder.classList.add("headerBorderScrolled")
 
 projectsButton.onclick = zoomIn
@@ -90,6 +114,7 @@ projectsButton.onclick = zoomIn
 }
 
 function zoomIn() {
+	contentIsOpened = true
   projectsButtonText.innerHTML = "Projects"
 
 	galleryBg.classList.add("bgZoomedIn")
@@ -140,4 +165,4 @@ document.onclick = (e)=>
 }
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-projectsButton.click()
+// projectsButton.click()

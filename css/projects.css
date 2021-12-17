@@ -25,6 +25,11 @@
   #headerHider {
     display: inline;
   }
+
+  #headerBorder {
+    /*background-color: red !important;*/
+    flex-direction: column !important;
+  }
 }
 @media only screen and (min-width: 1000px) {
   #headerBorder {

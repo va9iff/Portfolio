@@ -22,6 +22,10 @@
 }
 
 #content {
+	/*background-color: coral !important;*/
+	/*border: 2px solid orange;*/
+	/*box-shadow: 0 0 300px green inset;*/
+
 	/*padding-top: 8rem;*/
 }
 
@@ -49,6 +53,7 @@
 	/*height: 80vh !important;*/
 	/*width: 10vw !important;*/
 	width: 10rem !important;
+	overflow: scroll;
 }
 
 #content {
