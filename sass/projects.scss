@@ -70,6 +70,7 @@
 	/*background-color: salmon;*/
 	transform: rotate(-90deg) translateX(-100%);
 	/*flex-direction: column;*/
+	transition-duration: 0;
 }
 
 video,
@@ -84,8 +85,8 @@ iframe {
 #galleryBg {
 	/*background: linear-gradient(20deg, red, blue);*/
 	/*animation-name: glow;*/
-	animation-duration: 6000ms;
-	animation-iteration-count: infinite;
+	//animation-duration: 6000ms;
+	//animation-iteration-count: infinite;
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -124,6 +125,7 @@ iframe {
 	/*translate(100%, -1.5%) */
 	/*scale(1.02);*/
 
+	left: 0 !important;
 	transform:
 	rotate(90deg)
 	translateX(97.5%)
@@ -135,8 +137,15 @@ iframe {
 	/*-30px 40px 40px #3334;*/
 }
 
+.project:focus{
+	background-color: #fff4 !important;
+	left: 1rem;
+}
+
 .project {
+	left: 0;
 	padding: 4rem;
+	margin: 5rem;
 	margin-left: 5vh;
 	height: 80vh;
 	width: 50vw;
@@ -156,6 +165,8 @@ iframe {
 	translateX(100%)
 	translateY(-100%);
 	position: absolute;
+	display: flex;
+	text-decoration: none;
 }
 
 #p1 {

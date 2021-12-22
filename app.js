@@ -99,9 +99,12 @@ function zoomOut(e) {
 
   setTimeout(()=>maximizeHeader())
 
-
-
   unhideHeader()
+
+  zoomOutMenu.style.opacity=1
+  zoomOutMenu.style.pointerEvents="all"
+  zoomOutMenu.style.transform= 'translateX(0)'
+
   // e.stopPropagation()
 
   // minimizeHeader()
@@ -123,6 +126,10 @@ function zoomIn() {
   wrapper.classList.remove("wrapperZoomedOut")
   content.classList.remove("zoomOutFade")
   zoomTogglers.forEach(toggler => (toggler.classList.remove("displayNoneInator")))
+
+  zoomOutMenu.style.opacity=0
+  zoomOutMenu.style.pointerEvents="none"
+zoomOutMenu.style.transform= 'translateX(100%)'
 
 projectsButton.onclick = zoomOut
 
@@ -166,3 +173,7 @@ document.onclick = (e)=>
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 // projectsButton.click()
+
+
+// zoomoutmenu
+zoomOutMenu = g('#zoomOutMenu')
