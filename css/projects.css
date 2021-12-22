@@ -42,7 +42,6 @@
 /*}*/
 /* projects slider */
 #projects {
-  border-left: solid 2px red;
   /*background-color: #efefef4e;*/
   /*z-index: ;*/
   /*overflow-x: scroll;*/
@@ -124,7 +123,6 @@ iframe {
   height: 80vh;
   width: 50vw;
   /*left: 10vw;*/
-  border-left: solid red 2px;
   /*height: 80vh;*/
   /*height: 4rem;*/
   background: linear-gradient(60deg, #0000, #eee6);

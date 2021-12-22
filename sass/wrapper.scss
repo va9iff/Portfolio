@@ -17,18 +17,6 @@
 	/*padding-top: 1.4rem !important;*/
 }
 
-.wrapperScrolled > #content {
-	/*background-color: ;*/
-}
-
-#content {
-	/*background-color: coral !important;*/
-	/*border: 2px solid orange;*/
-	/*box-shadow: 0 0 300px green inset;*/
-
-	/*padding-top: 8rem;*/
-}
-
 .wrapperZoomedOut:hover {
 	background-color: #333 !important;
 	box-shadow: -3rem 0 70px #2227;
@@ -54,11 +42,6 @@
 	/*width: 10vw !important;*/
 	width: 10rem !important;
 	overflow: scroll;
-}
-
-#content {
-	opacity: 1;
-	transition-duration: 180ms;
 }
 
 .zoomOutFade {

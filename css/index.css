@@ -47,6 +47,9 @@ html {
   justify-content: space-between;
   padding: 0.4rem;
   border-radius: 1.3rem;
+  position: fixed;
+  width: calc(100% - 0.8em);
+  left: 0.4rem;
 }
 
 #headerBorder {
@@ -156,6 +159,7 @@ html {
 #myImage:hover {
   box-shadow: 0 0 40px #000, 0 0 12px -6px #fff;
   transform: scale(1.02);
+  transition-duration: 200ms;
 }
 
 #buttonWrapper {
@@ -205,17 +209,6 @@ html {
   /*padding-top: 1.4rem !important;*/
 }
 
-.wrapperScrolled > #content {
-  /*background-color: ;*/
-}
-
-#content {
-  /*background-color: coral !important;*/
-  /*border: 2px solid orange;*/
-  /*box-shadow: 0 0 300px green inset;*/
-  /*padding-top: 8rem;*/
-}
-
 .wrapperZoomedOut:hover {
   background-color: #333 !important;
   box-shadow: -3rem 0 70px #2227;
@@ -241,11 +234,6 @@ html {
   /*width: 10vw !important;*/
   width: 10rem !important;
   overflow: scroll;
-}
-
-#content {
-  opacity: 1;
-  transition-duration: 180ms;
 }
 
 .zoomOutFade {
@@ -341,6 +329,10 @@ html {
 #patreon {
   display: flex;
   align-items: center;
+}
+
+#gmail > img {
+  margin-right: 0.3rem;
 }
 
 #instagram,
@@ -442,7 +434,6 @@ html {
 /*}*/
 /* projects slider */
 #projects {
-  border-left: solid 2px red;
   /*background-color: #efefef4e;*/
   /*z-index: ;*/
   /*overflow-x: scroll;*/
@@ -524,7 +515,6 @@ iframe {
   height: 80vh;
   width: 50vw;
   /*left: 10vw;*/
-  border-left: solid red 2px;
   /*height: 80vh;*/
   /*height: 4rem;*/
   background: linear-gradient(60deg, #0000, #eee6);
@@ -617,6 +607,12 @@ iframe {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   transition-duration: 780ms;
+}
+
+#content {
+  opacity: 1;
+  transition-duration: 180ms;
+  padding-top: 70vh;
 }
 
 /*# sourceMappingURL=index.css.map */
