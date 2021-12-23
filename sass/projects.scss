@@ -124,7 +124,7 @@ iframe {
 	/*rotate(90deg) */
 	/*translate(100%, -1.5%) */
 	/*scale(1.02);*/
-
+	background-color: #fff1 !important;
 	left: 0 !important;
 	transform:
 	rotate(90deg)
@@ -132,6 +132,7 @@ iframe {
 	translateY(-107%)
 	scale(1.05);
 
+	padding-top: 0;
 
 	/*box-shadow: -30px 30px 30px #3333,*/
 	/*-30px 40px 40px #3334;*/
@@ -144,7 +145,8 @@ iframe {
 
 .project {
 	left: 0;
-	padding: 4rem;
+	padding: 2rem 4rem ;
+	padding-bottom: 0.5rem;
 	margin: 5rem;
 	margin-left: 5vh;
 	height: 80vh;
@@ -166,7 +168,9 @@ iframe {
 	translateY(-100%);
 	position: absolute;
 	display: flex;
+	flex-direction: column;
 	text-decoration: none;
+	align-items: center;
 }
 
 #p1 {
@@ -180,4 +184,49 @@ iframe {
 }
 #p4 {
 	top: 210vw;
+}
+
+
+.project>h3 {
+	/*color: yellow;*/
+	/*display: block;*/
+	font-size: 3rem;
+	/*margin-top: -5rem;*/
+	/*background-color: red;*/
+	text-align: center;
+	color: #eee;
+	/*font-weight: 000;*/
+	/*letter-spacing: 0.8rem;*/
+}
+.project>p {
+	color: #eeeb;
+	text-align: center;
+	font-size: 1.2rem;
+	overflow-y: scroll;
+	flex: 1;
+}
+
+.project>img {
+	/*height: 80%;*/
+	/*width: auto;*/
+	width: 70%;
+	height: 60%;
+	object-fit: cover;
+	border-radius: 1.3rem;
+	transition-duration: 800ms;
+}
+
+.project:hover>img {
+	width: 100%;
+	margin-top: -3vh;
+	transition-duration: 300ms;
+}
+
+#paddingScrollingOverflowMaker{
+	position: absolute;
+	padding: 4rem;
+	background-origin: red;
+	/*z-index: 999999999999;*/
+	top: 350vw;
+
 }
