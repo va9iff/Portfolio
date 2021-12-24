@@ -47,8 +47,8 @@
 }
 
 .headerScrolled {
-	background-color: #888a !important;
-	backdrop-filter: blur(2px) !important;
+	background-color: #8888 !important; //previously #88a
+	backdrop-filter: blur(8px) !important; //previously 2px
 	padding: 0 !important;
 	margin: 0 !important;
 	border-radius: 0 !important;

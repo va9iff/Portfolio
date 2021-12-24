@@ -1,0 +1,48 @@
+#nameSlide {
+  /*background-color: orange;*/
+  background: linear-gradient(-220deg, red, aqua);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition-duration: 1200ms;
+  /*transition-timing-function: linear;*/
+  margin-top: 50vh;
+  overflow: visible;
+  width: 100%;
+  /*border: 2px solid red;*/
+}
+
+#nameSlide > h4 {
+  font-size: 3rem;
+  transition-duration: 1400ms;
+  overflow: visible;
+  transition-timing-function: cubic-bezier(0, 1, 1, 1);
+  /*margin-left: -30%;*/
+}
+
+#nameSlide > h1 {
+  font-size: 8rem;
+  margin-left: 1rem;
+  /*word-wrap: none;*/
+  text-align: center;
+  white-space: nowrap;
+  white-space: pre;
+}
+
+#nameSlide > p {
+  text-align: center;
+  margin-top: 3.8rem;
+  font-size: 1.2rem;
+  /*text-shadow: 0 0.1rem 2px #3333;*/
+}
+
+@keyframes nameanim {
+  from {
+    filter: hue-rotate(0);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=name.css.map */

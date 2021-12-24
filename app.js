@@ -64,6 +64,15 @@ function checkScroll() {
 			maximizeHeader()
 		}
 	}
+	let nampos = nameSlide.getBoundingClientRect();
+	let namposr = nampos.top/window.innerHeight+0.2
+	if (namposr>0){
+			nameSlide.style.filter = `hue-rotate(${namposr*1000}deg)`
+			nameSlide.children[0].style.marginLeft = (1-namposr)*100 +'%'
+			// hide the name with scroll
+			// nameSlide.style.width = namposr*100-50+'%'
+			// nameSlide.style.opacity = namposr-0.2
+	}
 }
 
 window.onscroll = checkScroll
@@ -172,8 +181,20 @@ document.onclick = (e)=>
 }
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-projectsButton.click()
 
 
 // zoomoutmenu
 zoomOutMenu = g('#zoomOutMenu')
+
+
+
+
+// projectsButton.click()
+
+
+
+let nameSlide = g('#nameSlide')
+// nameSlide.style.transform = 'translateX(200px)'
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! to complete
+
+checkScroll()
