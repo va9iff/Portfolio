@@ -28,7 +28,10 @@
 
   #headerBorder {
     /*background-color: red !important;*/
-    flex-direction: column !important;
+  }
+
+  .project {
+    padding: 0 !important !important;
   }
 }
 @media only screen and (min-width: 1000px) {

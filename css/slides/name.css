@@ -10,6 +10,7 @@
   overflow: visible;
   width: 100%;
   /*border: 2px solid red;*/
+  margin-bottom: 10rem;
 }
 
 #nameSlide > h4 {
@@ -21,7 +22,7 @@
 }
 
 #nameSlide > h1 {
-  font-size: 8rem;
+  font-size: min(8rem, 10vw);
   margin-left: 1rem;
   /*word-wrap: none;*/
   text-align: center;
@@ -40,6 +41,11 @@
   }
   to {
     filter: hue-rotate(360deg);
+  }
+}
+@media only screen and (max-width: 600px) {
+  #nameSlide {
+    margin-top: 70vh !important;
   }
 }
 

@@ -1,0 +1,77 @@
+#skills{
+	border-radius: 2rem;
+	border: 3px solid #787878;
+	width: 50%;
+	min-height: 70vh;
+	padding: 0.7rem;
+	text-align: center;
+	display: flex;
+	flex: row;
+}
+
+#skillTabs{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	/*background-color: #555;*/
+}
+
+#skillDescription{
+	flex: 4;
+	display: flex;
+}
+
+.skillTab{
+	border-radius: 1rem;
+	border: solid 3px #787878;
+	background-color: #eee;
+	/*margin-left: -1rem;*/
+	padding: 1rem;
+	margin-top: 0.4rem;
+	width: 100%;
+}
+
+.activeSkillTab{
+	padding: 1.2rem;
+	/*border-right: none;*/
+	/*border-radius: 1rem 0 0 1rem ;*/
+	margin-left: -3rem;
+	width: calc(100% + 3rem);
+}
+
+#skillDescription > div{
+	display: none;
+	/*align-items: center;*/
+	justify-content: center;
+	transition-duration: 1800ms;
+	transition-timing-function: cubic-bezier(0.0, 1.2, 0.20, 1.0);
+	transform-origin: top;
+	padding: 2rem;
+	width: 100%;
+	font-size: 1.4rem;
+}
+
+#skillsHeader{
+	font-size: 4rem;
+	color: #373737;
+	margin-bottom: 1rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+		#skills{
+		width: 100% !important;
+		//background-color: red;
+		margin: 0;
+		border: none !important;
+		border-radius: 0 !important;
+		flex-direction: row-reverse;
+	}
+	.activeSkillTab{
+		margin-left: 3rem;
+	}
+	.skillTab{
+		border-radius: 1rem 0 0 1rem !important;
+	}
+
+}

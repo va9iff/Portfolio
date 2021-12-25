@@ -82,6 +82,8 @@
 #location,
 #instagram,
 #patreon {
+  text-decoration: none;
+  color: #eee !important;
   display: flex;
   align-items: center;
 }
@@ -143,6 +145,15 @@
 #additionalInfo {
   display: inline;
   margin: 1rem;
+}
+
+#gmail:hover > img {
+  transform: translateY(-0.2rem);
+  transition-timing-function: cubic-bezier(0, 1.8, 0.5, 1);
+}
+
+#location:hover > img {
+  transform: translateY(-0.2rem);
 }
 
 /*# sourceMappingURL=contacts.css.map */

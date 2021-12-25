@@ -87,10 +87,10 @@ zoomTogglers = [
 	g("#crucialContacts"),
 	g("#location"),
 	g("#gmail"),
-	g("#tel"),
+	// g("#tel"),
 	g("#tels"),
 	g("#secondaryContacts"),
-	g("#instagram"),
+	// g("#instagram"),
 	g("#patreon"),
 	g("#additionalInfo"),
 ]
@@ -198,3 +198,40 @@ let nameSlide = g('#nameSlide')
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! to complete
 
 checkScroll()
+
+
+// skills tab
+let skillTabs = document.getElementsByClassName('skillTab')
+let skillDescription = g('#skillDescription')
+let activeSkillTab = skillTabs[0]
+for (const skillTab of skillTabs){
+		skillTab.itsDescription = g('#skill'+skillTab.innerHTML)
+	skillTab.onclick = ()=>{
+		activeSkillTab.itsDescription.style.display = 'none'
+		activeSkillTab.classList.remove('activeSkillTab')
+		// skillDescription.innerHTML = skillTab.innerHTML
+		activeSkillTab = skillTab
+		activeSkillTab.classList.add('activeSkillTab')
+		// skillTab.itsDescription.style.opacity = 0.0
+		// skillTab.itsDescription.style.letterSpacing = '4rem'
+		skillTab.itsDescription.style.transform = 'scale(0)'
+		skillTab.itsDescription.style.display = 'flex'
+		setTimeout(()=>{
+			// skillTab.itsDescription.style.opacity = 1;
+			// skillTab.itsDescription.style.letterSpacing = '0.1rem'
+		skillTab.itsDescription.style.transform = 'scale(1)'
+		})
+		console.log(skillTab.itsDescription)
+	}
+}
+
+activeSkillTab.click()
+
+
+
+// projects gallery reminder
+let projectsReminder = g('#projectsReminder')
+projectsReminder.onclick = ()=>{
+	zoomOut()
+	projectsReminder.style.display = 'none'
+}
