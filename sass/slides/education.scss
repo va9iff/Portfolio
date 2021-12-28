@@ -1,29 +1,34 @@
 #educationSlide{
 	margin-top: 20vh;
-	/*background-color: #333;*/
+	background-color: #333;
 	height: 400vh;
 	width: 100%;
 	font-size: 1.2rem;
 }
 
 .treeElement{
-	/*background-color: coral;*/
-	width: 40%;
+	background-color: coral;
+	width: 30%;
+	padding-bottom: 1rem;
 }
 
 .stickyWrapper{
-	/*background-color: crimson;*/
-	height: 27vh;
+	background-color: crimson;
+	min-height: 27vh;
 }
+
+/*.leftTreeElement>{*/
+/**/
+/*}*/
 
 .leftTreeElement{
 	position: relative;
-	left: -60%;
+	left: -55%;
 }
 
 .rightTreeElement{
 	position: relative;
-	left: 60%;
+	left: 55%;
 }
 
 .stickyTreeHeader{
@@ -32,7 +37,15 @@
 	top: 5rem;
 	font-size: 1.7rem;
 	transform: translateX(-10%);
+
+	background-color: #eee;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	/*width: auto;*/
+	display: inline;
+	border: 3px solid #333;
 }
 
 .treeContent{
+	margin-top: 17vh;
 }
