@@ -1,6 +1,7 @@
 #wrapper {
 	z-index: 101;
-	overflow: hidden;
+	// overflow: hidden; //this breaks any of the position:sticky
+	// on its child nodes, and grand child nodes
 	left: 0;
 	top: 0;
 	background: #eee;

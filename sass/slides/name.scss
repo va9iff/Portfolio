@@ -26,6 +26,12 @@
 	transition-timing-function: cubic-bezier(0.0, 1.0, 1.0, 1.0);
 	/*margin-left: -30%;*/
 }
+
+#nameSlide > h4{
+	overflow-x: hidden
+}
+
+
 #nameSlide > h1 {
 	font-size: min(8rem, 10vw);
 	margin-left: 1rem;

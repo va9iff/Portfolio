@@ -197,7 +197,6 @@ html {
 
 #wrapper {
   z-index: 101;
-  overflow: hidden;
   left: 0;
   top: 0;
   background: #eee;
@@ -799,6 +798,10 @@ iframe {
   /*margin-left: -30%;*/
 }
 
+#nameSlide > h4 {
+  overflow-x: hidden;
+}
+
 #nameSlide > h1 {
   font-size: min(8rem, 10vw);
   margin-left: 1rem;
@@ -840,6 +843,7 @@ iframe {
   text-align: center;
   display: flex;
   flex: row;
+  overflow-x: hidden;
 }
 
 #skillTabs {
@@ -928,6 +932,49 @@ iframe {
   background-color: slateblue;
   border-color: #7288f8;
   color: #fff;
+}
+
+.slideHeader {
+  font-size: 4rem;
+  color: #373737;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+#educationSlide {
+  margin-top: 20vh;
+  /*background-color: #333;*/
+  height: 400vh;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.treeElement {
+  /*background-color: coral;*/
+  width: 40%;
+}
+
+.stickyWrapper {
+  /*background-color: crimson;*/
+  height: 27vh;
+}
+
+.leftTreeElement {
+  position: relative;
+  left: -60%;
+}
+
+.rightTreeElement {
+  position: relative;
+  left: 60%;
+}
+
+.stickyTreeHeader {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 5rem;
+  font-size: 1.7rem;
+  transform: translateX(-10%);
 }
 
 /*# sourceMappingURL=index.css.map */
