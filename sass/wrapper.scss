@@ -27,6 +27,16 @@
 	/*transition-timing-function: ease-in-out;*/
 }
 
+.wrapperZoomedOut{
+	overflow-x: visible !important
+}
+.wrapperZoomedOut>#zoomOutMenu {
+		overflow: visible
+		//display: none
+}
+//zoomOutMenu is visible with wrapper scrolls
+
+
 .wrapperZoomedOut {
 	/*	transition-duration: 600ms !important;
 	width:10vw !important;

@@ -25,6 +25,14 @@
 }
 
 .wrapperZoomedOut {
+  overflow-x: visible !important;
+}
+
+.wrapperZoomedOut > #zoomOutMenu {
+  overflow: visible;
+}
+
+.wrapperZoomedOut {
   /*	transition-duration: 600ms !important;
   	width:10vw !important;
   	left: 1rem !important;
