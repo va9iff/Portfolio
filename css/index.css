@@ -619,6 +619,10 @@ iframe {
   top: 350vw;
 }
 
+div#projects {
+  scroll-behavior: smooth;
+}
+
 /* content oriented */
 *::-webkit-scrollbar {
   width: 16px;

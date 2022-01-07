@@ -213,4 +213,8 @@ iframe {
   top: 350vw;
 }
 
+div#projects {
+  scroll-behavior: smooth;
+}
+
 /*# sourceMappingURL=projects.css.map */
