@@ -8,6 +8,7 @@
   width: 100%;
   min-height: 100vh;
   transition-duration: 600ms;
+  transform-origin: top;
   /*overflow-y: scroll;*/
 }
 
@@ -26,6 +27,7 @@
 
 .wrapperZoomedOut {
   overflow-x: visible !important;
+  top: 4rem !important;
 }
 
 .wrapperZoomedOut > #zoomOutMenu {
