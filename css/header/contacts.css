@@ -153,7 +153,7 @@
 }
 
 #location:hover > img {
-  transform: translateY(-0.2rem);
+  transform: translateY(-0.2rem) scale(1.1);
 }
 
 /*# sourceMappingURL=contacts.css.map */

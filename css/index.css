@@ -411,17 +411,22 @@ html {
 }
 
 #location:hover > img {
-  transform: translateY(-0.2rem);
+  transform: translateY(-0.2rem) scale(1.1);
 }
 
 .displayNoneInator {
-  /*display: none !important;*/
-  opacity: 0 !important;
   width: 0 !important;
   height: 0 !important;
   padding: 0 !important;
   margin: 0 !important;
-  overflow: hidden !important;
+  flex: 0;
+  transform: scale(0);
+  opacity: 0 !important;
+  /*overflow: hidden !important;*/
+}
+
+.displayNoneInator:not(#myImage) {
+  transition-duration: 800ms !important;
 }
 
 @media only screen and (max-width: 600px) {
