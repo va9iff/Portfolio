@@ -71,7 +71,9 @@
 		overflow-x: hidden;
 	}
 	.activeSkillTab{
-		margin-left: 3rem;
+		margin-left: -13px;
+		width: calc(100%);
+
 	}
 	.skillTab{
 		border-radius: 1rem 0 0 1rem !important;
