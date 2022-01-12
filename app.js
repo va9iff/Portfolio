@@ -235,3 +235,6 @@ projectsReminder.onclick = ()=>{
 	zoomOut()
 	projectsReminder.style.display = 'none'
 }
+
+
+zoomIn()

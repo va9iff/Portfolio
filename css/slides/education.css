@@ -56,6 +56,46 @@
   width: 50%;
 }
 
+@media screen and (min-width: 800px) {
+  .rightTreeElement > .stickyWrapper > .treeContent,
+.leftTreeElement > .stickyWrapper > .treeContent {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .rightTreeElement > .stickyWrapper > .treeContent,
+.leftTreeElement > .stickyWrapper > .treeContent {
+    width: 100%;
+  }
+
+  .rightTreeElement > .stickyWrapper > .stickyTreeHeader {
+    transform: translateX(0%);
+  }
+
+  .leftTreeElement > .stickyWrapper > .stickyTreeHeader {
+    transform: translateX(0%);
+  }
+
+  .stickyTreeHeader {
+    top: 10rem !important;
+    z-index: 405;
+  }
+
+  .rightTreeElement > .stickyWrapper > .treeContent {
+    /*background-color: blue !important;*/
+    transform: translateX(0%);
+    z-index: 400;
+  }
+
+  .leftTreeElement > .stickyWrapper > .treeContent {
+    transform: translateX(0%);
+    z-index: 400;
+  }
+
+  #educationSlide {
+    margin-bottom: 0vh;
+  }
+}
 .rightTreeElement {
   /*position: relative;*/
   /*left: 55%;*/
@@ -77,12 +117,6 @@
 .treeContent {
   margin-top: 17vh;
   /*transform: translateX(50%);*/
-}
-
-@media screen and (max-width: 600px) {
-  .stickyTreeHeader {
-    top: 80vh;
-  }
 }
 
 /*# sourceMappingURL=education.css.map */

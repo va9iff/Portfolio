@@ -68,7 +68,8 @@
   }
 
   .activeSkillTab {
-    margin-left: 3rem;
+    margin-left: -13px;
+    width: 100%;
   }
 
   .skillTab {

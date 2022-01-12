@@ -12,11 +12,44 @@
 	transition-duration: 800ms !important;
 }
 @media only screen and (max-width: 600px) {
+	#p1,#p2,#p3,#p4,#p5
+	 {
+	 	padding: 0.1rem;
+	 	width: 80vw;
+	 	//border: 2px solid red !important;
+	}
+
+	#projects>#p1{
+		top: 130vw !important
+	}
+	#projects>#p2{
+		top: 230vw !important
+	}
+	#projects>#p3{
+		top: 330vw !important
+	}
+	#projects>#p4{
+		top: 430vw !important
+	}
+	#projects>#p5{
+		top: 530vw !important
+	}
+
+#paddingScrollingOverflowMaker{
+	top: 550vw;
+}
+
+
+
+	.wrapperZoomedOut:hover {
+		height: 150vh !important;
+	}
+
 	.wrapperZoomedOut {
 		background-color: #222 !important;
 		position: fixed;
 		left: 0;
-		height: 200vh !important;
+		height: 150vh !important;
 
 		/*height: 120vh !important;*/
 		/*min-height: 0 !important;*/
@@ -192,6 +225,9 @@ iframe {
 #p4 {
 	top: 210vw;
 }
+#p5 {
+	top: 270vw;
+}
 
 
 .project>h3 {
@@ -232,7 +268,7 @@ iframe {
 #paddingScrollingOverflowMaker{
 	position: absolute;
 	padding: 4rem;
-	background-origin: red;
+	//background-origin: red;
 	/*z-index: 999999999999;*/
 	top: 350vw;
 

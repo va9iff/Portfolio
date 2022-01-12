@@ -447,11 +447,44 @@ html {
 }
 
 @media only screen and (max-width: 600px) {
+  #p1, #p2, #p3, #p4, #p5 {
+    padding: 0.1rem;
+    width: 80vw;
+  }
+
+  #projects > #p1 {
+    top: 130vw !important;
+  }
+
+  #projects > #p2 {
+    top: 230vw !important;
+  }
+
+  #projects > #p3 {
+    top: 330vw !important;
+  }
+
+  #projects > #p4 {
+    top: 430vw !important;
+  }
+
+  #projects > #p5 {
+    top: 530vw !important;
+  }
+
+  #paddingScrollingOverflowMaker {
+    top: 550vw;
+  }
+
+  .wrapperZoomedOut:hover {
+    height: 150vh !important;
+  }
+
   .wrapperZoomedOut {
     background-color: #222 !important;
     position: fixed;
     left: 0;
-    height: 200vh !important;
+    height: 150vh !important;
     /*height: 120vh !important;*/
     /*min-height: 0 !important;*/
     /*height: 2rem !important;*/
@@ -607,6 +640,10 @@ iframe {
   top: 210vw;
 }
 
+#p5 {
+  top: 270vw;
+}
+
 .project > h3 {
   /*color: yellow;*/
   /*display: block;*/
@@ -646,7 +683,6 @@ iframe {
 #paddingScrollingOverflowMaker {
   position: absolute;
   padding: 4rem;
-  background-origin: red;
   /*z-index: 999999999999;*/
   top: 350vw;
 }
@@ -949,7 +985,8 @@ div#projects {
   }
 
   .activeSkillTab {
-    margin-left: 3rem;
+    margin-left: -13px;
+    width: 100%;
   }
 
   .skillTab {
@@ -1044,6 +1081,46 @@ div#projects {
   width: 50%;
 }
 
+@media screen and (min-width: 800px) {
+  .rightTreeElement > .stickyWrapper > .treeContent,
+.leftTreeElement > .stickyWrapper > .treeContent {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .rightTreeElement > .stickyWrapper > .treeContent,
+.leftTreeElement > .stickyWrapper > .treeContent {
+    width: 100%;
+  }
+
+  .rightTreeElement > .stickyWrapper > .stickyTreeHeader {
+    transform: translateX(0%);
+  }
+
+  .leftTreeElement > .stickyWrapper > .stickyTreeHeader {
+    transform: translateX(0%);
+  }
+
+  .stickyTreeHeader {
+    top: 10rem !important;
+    z-index: 405;
+  }
+
+  .rightTreeElement > .stickyWrapper > .treeContent {
+    /*background-color: blue !important;*/
+    transform: translateX(0%);
+    z-index: 400;
+  }
+
+  .leftTreeElement > .stickyWrapper > .treeContent {
+    transform: translateX(0%);
+    z-index: 400;
+  }
+
+  #educationSlide {
+    margin-bottom: 0vh;
+  }
+}
 .rightTreeElement {
   /*position: relative;*/
   /*left: 55%;*/
@@ -1065,12 +1142,6 @@ div#projects {
 .treeContent {
   margin-top: 17vh;
   /*transform: translateX(50%);*/
-}
-
-@media screen and (max-width: 600px) {
-  .stickyTreeHeader {
-    top: 80vh;
-  }
 }
 
 /*# sourceMappingURL=index.css.map */
