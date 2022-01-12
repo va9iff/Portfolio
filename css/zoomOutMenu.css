@@ -17,6 +17,10 @@
   border: 2px solid #fff;
 }
 
+#zoomOutMenu > a:hover:active {
+  transform: scale(1.2);
+}
+
 #zoomOutMenu > a {
   background-color: #383838;
   margin: 0.5rem;
@@ -36,6 +40,12 @@
 
 #zoomOutMenu > a:hover {
   background-color: #555;
+  border-radius: 1.5rem;
+  transform: scale(0.95);
+}
+
+.wrapperZoomedOut > #header > #realHeader {
+  box-shadow: 0 0 20px 20px #222;
 }
 
 .wrapperZoomedOut > #zoomOutMenu {
@@ -72,7 +82,7 @@
   /*width: calc(100% - 4rem);*/
   /*background-color: #222a;*/
   background-color: #222;
-  box-shadow: 0 0 20px 20px #222;
+  box-shadow: 0 20px 20px 0 #222;
 }
 
 /*# sourceMappingURL=zoomOutMenu.css.map */
