@@ -70,7 +70,6 @@
 
 .headerScrolled > #headerBorder > #headerHider {
   background-color: #333 !important;
-  padding: 1.2rem 3rem;
   flex-grow: 1;
   border-radius: 1rem;
 }
@@ -130,12 +129,15 @@
   height: 6rem;
   border-radius: 50%;
   box-shadow: 10px -18px 40px #0005, -1px 1px 4px #fff;
+  transition-timing-function: cubic-bezier(0, 1, 1, 1);
 }
 
 #myImage:hover {
-  box-shadow: 0 0 40px #000, 0 0 12px -6px #fff;
+  box-shadow: 0 0 20px #222, 0 0 12px -12px #fff;
   transform: scale(1.02);
-  transition-duration: 200ms;
+  transition-duration: 400ms;
+  width: 8rem !important;
+  height: 8rem !important;
 }
 
 #buttonWrapper {

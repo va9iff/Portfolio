@@ -1,5 +1,5 @@
 #educationSlide {
-  margin-top: 20vh;
+  margin-top: 0vh;
   /*background-color: #333;*/
   height: 100vh;
   margin-bottom: 30vh;
@@ -77,6 +77,12 @@
 .treeContent {
   margin-top: 17vh;
   /*transform: translateX(50%);*/
+}
+
+@media screen and (max-width: 600px) {
+  .stickyTreeHeader {
+    top: 80vh;
+  }
 }
 
 /*# sourceMappingURL=education.css.map */

@@ -92,7 +92,7 @@ zoomTogglers = [
 	g("#secondaryContacts"),
 	// g("#instagram"),
 	g("#patreon"),
-	g("#additionalInfo"),
+	//g("#additionalInfo"),
 ]
 
 function zoomOut(e) {
