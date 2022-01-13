@@ -21,6 +21,10 @@
   display: flex;
 }
 
+.skillTab:active {
+  margin-left: 1rem;
+}
+
 .skillTab {
   border-radius: 1rem;
   border: solid 3px #787878;

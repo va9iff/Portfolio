@@ -1,8 +1,8 @@
 #educationSlide {
   margin-top: 0vh;
   /*background-color: #333;*/
-  height: 100vh;
-  margin-bottom: 30vh;
+  min-height: 100vh;
+  margin-bottom: 10vh;
   width: 100%;
   font-size: 1.2rem;
   display: flex;
