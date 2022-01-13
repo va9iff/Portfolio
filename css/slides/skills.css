@@ -1,8 +1,8 @@
 #skills {
   border-radius: 2rem;
   border: 3px solid #787878;
-  width: 50%;
-  min-height: 70vh;
+  max-width: 50%;
+  min-height: 25rem;
   padding: 0.7rem;
   text-align: center;
   display: flex;
