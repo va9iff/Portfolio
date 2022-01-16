@@ -1,8 +1,21 @@
 .slideHeader {
+  margin-top: 8rem;
+  margin-bottom: 2rem;
   font-size: 4rem;
   color: #373737;
-  margin-bottom: 1rem;
   font-weight: 700;
+}
+
+.slideHeader::before {
+  content: "< ";
+  opacity: 0.7;
+  color: #794d8f;
+}
+
+.slideHeader::after {
+  content: " />";
+  opacity: 0.7;
+  color: #794d8f;
 }
 
 /*# sourceMappingURL=slideHeaders.css.map */

@@ -1,7 +1,7 @@
 #skills {
   border-radius: 2rem;
   border: 3px solid #787878;
-  max-width: 50%;
+  max-width: 70%;
   min-height: 25rem;
   padding: 0.7rem;
   text-align: center;
@@ -49,7 +49,7 @@
   justify-content: center;
   transition-duration: 1800ms;
   transition-timing-function: cubic-bezier(0, 1.2, 0.2, 1);
-  transform-origin: top;
+  transform-origin: left top;
   padding: 2rem;
   width: 100%;
   font-size: 1.4rem;
@@ -79,6 +79,9 @@
   .skillTab {
     border-radius: 1rem 0 0 1rem !important;
   }
+}
+#skillDescription > div {
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=skills.css.map */

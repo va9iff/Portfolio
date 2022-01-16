@@ -4,13 +4,13 @@
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  transition-duration: 1200ms;
+  transition-duration: 600ms;
   /*transition-timing-function: linear;*/
   margin-top: 50vh;
   overflow: visible;
   width: 100%;
   /*border: 2px solid red;*/
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
 }
 
 #nameSlide > h4 {

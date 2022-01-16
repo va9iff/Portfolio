@@ -75,7 +75,7 @@ html {
 
 .headerScrolled {
   background-color: #8888 !important;
-  backdrop-filter: blur(8px) !important;
+  backdrop-filter: blur(4px) !important;
   padding: 0 !important;
   margin: 0 !important;
   border-radius: 0 !important;
@@ -862,13 +862,13 @@ div#projects {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  transition-duration: 1200ms;
+  transition-duration: 600ms;
   /*transition-timing-function: linear;*/
   margin-top: 50vh;
   overflow: visible;
   width: 100%;
   /*border: 2px solid red;*/
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
 }
 
 #nameSlide > h4 {
@@ -918,7 +918,7 @@ div#projects {
 #skills {
   border-radius: 2rem;
   border: 3px solid #787878;
-  max-width: 50%;
+  max-width: 70%;
   min-height: 25rem;
   padding: 0.7rem;
   text-align: center;
@@ -966,7 +966,7 @@ div#projects {
   justify-content: center;
   transition-duration: 1800ms;
   transition-timing-function: cubic-bezier(0, 1.2, 0.2, 1);
-  transform-origin: top;
+  transform-origin: left top;
   padding: 2rem;
   width: 100%;
   font-size: 1.4rem;
@@ -997,6 +997,10 @@ div#projects {
     border-radius: 1rem 0 0 1rem !important;
   }
 }
+#skillDescription > div {
+  flex-direction: column;
+}
+
 #projectsReminder {
   display: flex;
   justify-content: center;
@@ -1021,17 +1025,28 @@ div#projects {
 }
 
 .slideHeader {
+  margin-top: 8rem;
+  margin-bottom: 2rem;
   font-size: 4rem;
   color: #373737;
-  margin-bottom: 1rem;
   font-weight: 700;
+}
+
+.slideHeader::before {
+  content: "< ";
+  opacity: 0.7;
+  color: #794d8f;
+}
+
+.slideHeader::after {
+  content: " />";
+  opacity: 0.7;
+  color: #794d8f;
 }
 
 #educationSlide {
   margin-top: 0vh;
   /*background-color: #333;*/
-  margin-bottom: 10vh;
-  margin-bottom: 4rem;
   width: 100%;
   font-size: 1.2rem;
   display: flex;
