@@ -1,0 +1,24 @@
+#touchResponse {
+  position: fixed;
+  width: 0;
+  height: 0;
+  background-color: #5843;
+  pointer-events: none;
+  z-index: 999;
+  left: 0;
+  top: 0;
+}
+
+.touchBlob {
+  /*background-color: red;*/
+  background: radial-gradient(#0000, #fff);
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  transform-origin: top left;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition-duration: 780ms;
+}
+
+/*# sourceMappingURL=touchResponse.css.map */

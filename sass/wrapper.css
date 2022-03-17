@@ -1,0 +1,60 @@
+#wrapper {
+  z-index: 101;
+  left: 0;
+  top: 0;
+  background: #eee;
+  padding: 0.4rem;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  transition-duration: 600ms;
+  transform-origin: top;
+  /*overflow-y: scroll;*/
+}
+
+.wrapperScrolled {
+  /*padding-top: 1.4rem !important;*/
+}
+
+.wrapperZoomedOut:hover {
+  background-color: #333 !important;
+  box-shadow: -3rem 0 70px #2227;
+  height: 100vh !important;
+  /*transition-timing-function: ease-in-out;*/
+}
+
+.wrapperZoomedOut {
+  overflow-x: visible !important;
+  top: 4rem !important;
+}
+
+.wrapperZoomedOut > #zoomOutMenu {
+  overflow: visible;
+}
+
+.wrapperZoomedOut {
+  /*	transition-duration: 600ms !important;
+  	width:10vw !important;
+  	left: 1rem !important;
+  	top: 1rem !important;
+  	height: 80vh !important;
+  	border-radius: 2rem;
+  */
+  transform: scale(0.7);
+  border-radius: 1rem;
+  background-color: #222 !important;
+  /*height: 80vh !important;*/
+  /*height: 80vh !important;*/
+  /*width: 10vw !important;*/
+  width: 10rem !important;
+  overflow: scroll;
+}
+
+.zoomOutFade {
+  /*transform: translateX(-50%) !important;*/
+  /*opacity: 0 !important;*/
+  /*background-color: red;*/
+  display: none !important;
+}
+
+/*# sourceMappingURL=wrapper.css.map */

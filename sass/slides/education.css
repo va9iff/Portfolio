@@ -1,0 +1,119 @@
+#educationSlide {
+  margin-top: 0vh;
+  /*background-color: #333;*/
+  width: 100%;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.treeElement {
+  /*background-color: coral;*/
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+.stickyWrapper {
+  /*background-color: crimson;*/
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightTreeElement > .stickyWrapper > .stickyTreeHeader, .leftTreeElement > .stickyWrapper > .stickyTreeHeader {
+  /*background-color: #472 !important;*/
+}
+
+.rightTreeElement > .stickyWrapper > .stickyTreeHeader {
+  transform: translateX(-55%);
+}
+
+.leftTreeElement > .stickyWrapper > .stickyTreeHeader {
+  transform: translateX(55%);
+}
+
+.leftTreeElement {
+  /*position: relative;*/
+  /*left: -55%;*/
+}
+
+.rightTreeElement > .stickyWrapper > .treeContent {
+  /*background-color: blue !important;*/
+  transform: translateX(55%);
+}
+
+.leftTreeElement > .stickyWrapper > .treeContent {
+  transform: translateX(-55%);
+  text-align: right;
+}
+
+.rightTreeElement > .stickyWrapper > .treeContent,
+.leftTreeElement > .stickyWrapper > .treeContent {
+  width: 50%;
+}
+
+@media screen and (min-width: 800px) {
+  .rightTreeElement > .stickyWrapper > .treeContent,
+.leftTreeElement > .stickyWrapper > .treeContent {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .rightTreeElement > .stickyWrapper > .treeContent,
+.leftTreeElement > .stickyWrapper > .treeContent {
+    width: 100%;
+  }
+
+  .rightTreeElement > .stickyWrapper > .stickyTreeHeader {
+    transform: translateX(0%);
+  }
+
+  .leftTreeElement > .stickyWrapper > .stickyTreeHeader {
+    transform: translateX(0%);
+  }
+
+  .stickyTreeHeader {
+    top: 10rem !important;
+    z-index: 405;
+  }
+
+  .rightTreeElement > .stickyWrapper > .treeContent {
+    /*background-color: blue !important;*/
+    transform: translateX(0%);
+    z-index: 400;
+  }
+
+  .leftTreeElement > .stickyWrapper > .treeContent {
+    transform: translateX(0%);
+    z-index: 400;
+  }
+
+  #educationSlide {
+    margin-bottom: 0vh;
+  }
+}
+.rightTreeElement {
+  /*position: relative;*/
+  /*left: 55%;*/
+}
+
+.stickyTreeHeader {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 5rem;
+  font-size: 1.7rem;
+  background-color: #eee;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  /*width: auto;*/
+  display: inline;
+  border: 3px solid #333;
+}
+
+.treeContent {
+  /*transform: translateX(50%);*/
+}
+
+/*# sourceMappingURL=education.css.map */
